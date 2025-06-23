@@ -17,7 +17,7 @@ projectRouter.post("/addProject", async (req, res) => {
     await project.save();
     res.send("Project Added");
   } catch (err) {
-    res.status(400).send("Error saving the project: " + err.message);
+    res.status(400).send("Error while saving the Project: " + err.message);
   }
 });
 
