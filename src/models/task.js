@@ -9,7 +9,7 @@ const taskSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true,
-    maxLength: 500,
+    maxLength: 600,
   },
   assignedUser: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   priority: {
