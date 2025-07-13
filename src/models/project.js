@@ -9,7 +9,7 @@ const projectSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true,
-    maxLength: 500,
+    maxLength: 600,
   },
   startDate: {
     type: Date,
