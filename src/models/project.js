@@ -21,8 +21,8 @@ const projectSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["open", "in-progress", "completed"],
-    default: "open",
+    enum: ["Open", "in-progress", "completed"],
+    default: "Open",
   },
   teamMembers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
 });
