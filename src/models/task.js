@@ -15,7 +15,7 @@ const taskSchema = new mongoose.Schema({
   assignedUser: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   priority: {
     type: String,
-    enum: ["Low", "Medium", "high"],
+    enum: ["Low", "Medium", "High"],
     default: "medium",
   },
   status: {
